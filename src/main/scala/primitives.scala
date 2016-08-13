@@ -17,4 +17,8 @@ package object primitives {
    implicit class BooleanSome(boolean: Boolean) {
       def some: Option[Boolean] = if(boolean) Some(true) else None
    }
+
+   implicit class BooleanMap(boolean: Boolean) {
+      def map[B](f: => B): Option[B] = if(boolean) Some(f) else None
+   }
 }
