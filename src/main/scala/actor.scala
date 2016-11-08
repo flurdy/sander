@@ -18,8 +18,8 @@ object ActorFactory extends ActorFactory
 
 class ProbeFactory(implicit system: ActorSystem) extends ActorFactory {
 
-  val first = TestProbe()
-  val second = TestProbe()
+  val first = TestProbe("first")
+  val second = TestProbe("second")
   var unprobed = List(first,second)
   var probed: List[TestProbe] = Nil
 
@@ -28,7 +28,7 @@ class ProbeFactory(implicit system: ActorSystem) extends ActorFactory {
            case head::tail =>
               unprobed = tail
               head
-           case Nil => TestProbe()
+           case Nil => TestProbe(s"probe-created-${probed.size+1}-")
          }
       probed = probe :: probed
       probe.ref

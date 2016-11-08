@@ -3,7 +3,7 @@ organization  := "com.flurdy"
 
 scalaVersion := "2.11.6"
 
-version := "0.1.3"
+version := "0.1.4"
 
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 
