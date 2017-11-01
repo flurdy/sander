@@ -1,4 +1,4 @@
-package com.flurdy.sander.actor
+package com.flurdy.sander.akka
 
 import akka.actor.{ActorContext,ActorRef,ActorSystem,Props}
 import akka.testkit.TestProbe

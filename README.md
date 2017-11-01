@@ -1,6 +1,6 @@
 ## Sander
 
-Utility classes to polish scala applications.
+Utility classes to polish Scala applications.
 
 #### Primitives
 
@@ -19,4 +19,5 @@ Modify your *build.sbt* and add this:
 
     resolvers += "flurdy-maven" at "http://dl.bintray.com/content/flurdy/maven"
 
-    libraryDependencies += "com.flurdy" %% "sander" % "0.1.2"
+    libraryDependencies += "com.flurdy" %% "sander-core" % "0.2.0"
+    libraryDependencies += "com.flurdy" %% "sander-akka" % "0.2.0"
