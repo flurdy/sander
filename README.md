@@ -10,6 +10,10 @@ Implicit methods that seem common sense to me.
 
 Stop and start Scala applications
 
+#### Akka
+
+Actor and Probe factory
+
 
 
 ## Install
